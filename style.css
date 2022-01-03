@@ -1,0 +1,107 @@
+:root {
+    /* Text Colouring for Tasks*/
+    --primary: #101820;
+    /* Background Colouring for Tasks*/
+    --secondary: #f3AA4e;
+}
+
+body {
+    background-color: var(--primary);
+    color: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.5rem;
+  }
+
+  h1{
+    color: var(--secondary);
+  }
+  table {
+        width: 100%;
+        max-width: 50rem;
+        border-spacing: 0;
+        margin: 0;
+  }
+
+    tr:nth-child(even) th {
+        color: #ccc;
+        font-weight: normal;
+        font-size: 1rem;
+        border-top: 1px dotted grey;
+    }
+    
+    th {
+        border-top: 1px solid var(--secondary);
+        font-weight: normal;
+        width: 25%;
+        padding: 0.5rem 1rem;
+    }
+    
+    td {
+        font-size: 1rem;
+        font-weight: bold;
+        width: 75%;
+        transition: opacity 0.5s ease;
+        border: 0;
+        padding: 0;
+        padding-left: 1rem;
+
+    }
+
+    input {
+        background-color: var(--primary);
+        color: var(--secondary);
+    }
+
+    .topForm {
+        color: var(--primary);
+        background-color: var(--secondary);
+        border: var(--secondary) 3px solid;
+        border-radius: 2px;
+    }
+    .topForm:hover {
+        background-color: #ffe5c5;
+        border-color: #ffe5c5;
+        transition: 0.5s;
+        
+    }
+
+  
+.startTask {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-top: var(--primary) solid 2px;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.midTask {
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+.endTask {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border-bottom: var(--primary) solid 2px;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.wholeTask {
+    color: var(--primary);
+    background-color: var(--secondary);
+    border: var(--primary) solid 2px;
+    border-radius: 0.5rem;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+.now {
+    color: #ffe5c5;
+    font-size: 2rem;
+}
